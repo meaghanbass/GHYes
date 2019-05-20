@@ -1,62 +1,45 @@
-h1 {
-    color: #369;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 250%;
+.site-wrapper {
+    padding:0;
 }
 
 .header {
+    min-height:200px;
     border-bottom: #B26CBC 45px solid;
-    padding-bottom:80px;
 }
 
-#newsletter-signup {
-    width:323px;
-    height:35px;
+.subscribe-tab {
     background-color:#E7E7E7;
+    width:320px;
+    height:35px;
     position:absolute;
     top:0;
-    right:121px;
+    right:10%;
     border-bottom-left-radius:10px;
     border-bottom-right-radius:10px;
-
-    p {
-        font-size:15px;
-        color:#4f6d8d;
-        text-align:center;
-        line-height:30px;
-    }
+    color:#4f6d8d;
+    font-size:15px;
+    line-height:30px;
 }
 
-@media (max-width: 565px) {
-    
+.logo {
+    width:160px;
+    float:left;
 }
 
-#nav-logo {
-    position:absolute;
-    top:0;
+nav {
+    float:right;
+    top:45px;
 }
 
-.nav-expanded {
-    position: absolute;
-    left:190px;
-    top:50px;
-}
+/////////////////////////// MEDIA QUERIES ///////////////////////////
 
-@media (max-width: 991px) {
-    .nav-expanded {
-        right:25px;
-        left:auto;
-        text-align:right;
+//Bootstrap MD and less than
+@media (max-width: 768px) {
+    .subscribe-tab {
+        display:none;
     }
 
-    #newsletter-signup {
-        visibility: hidden;
+    .logo {
+        display:none;
     }
-}
-
-.nav-item {
-    border-left: #CCC 1px solid;
-    color: #4f6d8d;
-    padding-left:10px;
-    text-decoration: none;
 }

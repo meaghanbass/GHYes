@@ -10,7 +10,6 @@ export class AppComponent {
   navLink1 = 'About Us';
   navLink2 = 'Our Services';
   navLink3 = 'Our Economy';
-  navLink4 = '#';
-  navLink5 = 'Research Center';
-  navLink6 = 'News & Events';
+  navLink4 = 'Research Center';
+  navLink5 = 'News & Events';
 }
