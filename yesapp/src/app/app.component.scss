@@ -4,6 +4,11 @@ h1 {
     font-size: 250%;
 }
 
+.header {
+    border-bottom: #B26CBC 45px solid;
+    padding-bottom:80px;
+}
+
 #newsletter-signup {
     width:323px;
     height:35px;
@@ -20,4 +25,38 @@ h1 {
         text-align:center;
         line-height:30px;
     }
+}
+
+@media (max-width: 565px) {
+    
+}
+
+#nav-logo {
+    position:absolute;
+    top:0;
+}
+
+.nav-expanded {
+    position: absolute;
+    left:190px;
+    top:50px;
+}
+
+@media (max-width: 991px) {
+    .nav-expanded {
+        right:25px;
+        left:auto;
+        text-align:right;
+    }
+
+    #newsletter-signup {
+        visibility: hidden;
+    }
+}
+
+.nav-item {
+    border-left: #CCC 1px solid;
+    color: #4f6d8d;
+    padding-left:10px;
+    text-decoration: none;
 }
