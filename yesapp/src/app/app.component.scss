@@ -29,6 +29,8 @@
 .logo {
     width:160px;
     float:left;
+    z-index: 1;
+    position: relative;
 }
 
 .company-name {
@@ -59,6 +61,26 @@ button:focus {
     margin-right:10px;
 }
 
+.clear {
+    clear:both;
+}
+
+.block-1 {
+    //background: #ffffff url(src\assets\images\bg-block1.png) top right no-repeat;
+    //height:450px;
+    background: url(src\assets\images\bg-block1.png);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-position-x: right;
+    background-repeat: no-repeat;
+}
+
+.block-2 {
+    background-color:#661F74;
+    min-height:200px;
+}
+
 /////////////////////////// MEDIA QUERIES ///////////////////////////
 
 //Bootstrap MD and less than
@@ -82,6 +104,8 @@ button:focus {
     .navbar-nav {
         padding-top:110px;
         align-items: flex-end;
+        position: relative;
+        z-index: 2;
     }
 
     .navbar-toggler {
