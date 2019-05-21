@@ -3,7 +3,7 @@
 }
 
 .header {
-    min-height:200px;
+    height:150px;
     border-bottom: #B26CBC 45px solid;
 }
 
@@ -19,6 +19,11 @@
     color:#4f6d8d;
     font-size:15px;
     line-height:30px;
+
+    i {
+        font-size:20px;
+        line-height:20px;
+    }
 }
 
 .logo {
@@ -26,15 +31,38 @@
     float:left;
 }
 
+.company-name {
+    display:none;
+
+    p {
+        line-height:100px;
+    }
+}
+
 nav {
-    float:right;
+    // float:right;
     top:45px;
+}
+
+button:focus {
+    outline:none;
+}
+
+.nav-item {
+    width:max-content;
+    color: #4f6d8d;
+    font-size:15px;
+    height:32px;
+    line-height:16px;
+    text-decoration: none;
+    border-left: #CCC 1px solid;
+    margin-right:10px;
 }
 
 /////////////////////////// MEDIA QUERIES ///////////////////////////
 
 //Bootstrap MD and less than
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .subscribe-tab {
         display:none;
     }
@@ -42,4 +70,33 @@ nav {
     .logo {
         display:none;
     }
+
+    .company-name {
+        display:inline-block;
+    }
+
+    nav {
+        float:right;
+    }
+
+    .navbar-nav {
+        padding-top:110px;
+        align-items: flex-end;
+    }
+
+    .navbar-toggler {
+        position:absolute;
+        top:-15px;
+        right:0;
+    }
+
+    .nav-item {
+        margin-right:0;
+        width:140px;
+        padding-left:10px;
+        margin-bottom:20px;
+        text-align:right;
+        border-left-width:3px;
+    }
+
 }
